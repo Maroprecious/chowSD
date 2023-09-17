@@ -40,7 +40,8 @@ var whitelist = [
   'https://cc-next-dev.vercel.app/',
   "https://chopchow-beeox2y92-chop-chow.vercel.app",
   "https://cc-next-oty3f0zz0-chop-chow.vercel.app",
-  "moz-extension://c228269d-fdaa-4b34-9ce8-2fe9e965a787"
+  "moz-extension://c228269d-fdaa-4b34-9ce8-2fe9e965a787",
+  'https://cc-next-liart.vercel.app/'
 ];
 var corsOptions = {
   origin: function (origin, callback) {
