@@ -34,7 +34,12 @@ const GroceryListSchema = new Schema({
         itemData: {
             id: String,
             item_name: String,
-            createdAt: Date
+            createdAt: Date,
+            quantity: String,
+            measurement: {
+                type: Schema.Types.ObjectId,
+                ref: 'Measurement',
+            }
         }
     }],
     status: {
