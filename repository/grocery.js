@@ -223,6 +223,7 @@ const getAllGroceryList = async (userId) => {
         }
       })
 
+
   } catch (error) {
     throw error
   }
@@ -235,7 +236,7 @@ const getOneGrocery = async (id) => {
       .populate({
         path: 'groceryItems',
         populate: {
-          path: 'item measurement'
+          path: 'item measurement itemData.measurement'
         }
       })
   } catch (error) {
