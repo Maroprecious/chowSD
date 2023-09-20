@@ -253,12 +253,7 @@ class GroceryService {
 
       const checkExist = await checkIfGroceryListExist({ listName: value.listName })
       if (checkExist) {
-        return await addJsonDataToGroceryList({
-          listName: value.listName,
-          item_name: value.item_name,
-          quantity: value.quantity || '',
-          measurement: value.measurement || ''
-        })
+        return await addJsonDataToGroceryList({ ...value })
       }
       // con
     } catch (e) {
